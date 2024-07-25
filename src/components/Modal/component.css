@@ -1,0 +1,28 @@
+.component {
+  align-items: center;
+  background-color: var(--primarymain);
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  height: 44px;
+  justify-content: center;
+  padding: 17px 16px;
+  position: relative;
+  width: 170px;
+}
+
+.component .button {
+  all: unset;
+  box-sizing: border-box;
+  color: #ffffff;
+  flex: 1;
+  font-family: "Pretendard-SemiBold", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -3.5px;
+  margin-top: -5.5px;
+  position: relative;
+  text-align: center;
+}

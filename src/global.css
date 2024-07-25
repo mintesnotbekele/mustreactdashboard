@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:var(--p-l-b-font-weight)");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@font-face {
+  font-family: "Pretendard-SemiBold";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/6122f3f935181493bb5c6c35/fonts/pretendard-semibold.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Pretendard-Medium";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/652c3450456268e27eebc9fd/fonts/gothica1-bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/5f06a5517739f30d3a8fc967/fonts/pretendard-regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  src: url("https://anima-uploads.s3.amazonaws.com/projects/5f06a5517739f30d3a8fc967/fonts/pretendard-bold.otf")
+    format("opentype");
+}
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+}
+/* a blue color as a generic focus style */
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+a {
+  text-decoration: none;
+}
+
+:root {
+  --base-white: rgba(255, 255, 255, 1);
+  --black: rgba(18, 19, 20, 1);
+  --check-box-shaodw: 0px 2px 5px 0px rgba(89, 96, 120, 0.1),
+    0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  --dark-1: rgba(34, 34, 34, 1);
+  --dark-2: rgba(20, 31, 45, 1);
+  --dark-3: rgba(90, 97, 106, 1);
+  --dropdown-shadow1: 0px 8px 16px 0px rgba(54, 54, 54, 0.15);
+  --gray-200: rgba(228, 231, 236, 1);
+  --gray-500: rgba(107, 114, 128, 1);
+  --gray-600: rgba(71, 84, 103, 1);
+  --gray-900: rgba(16, 24, 40, 1);
+  --green-400: rgba(49, 196, 141, 1);
+  --inputformcompleted: rgba(177, 180, 187, 1);
+  --inputformdefault: rgba(215, 216, 218, 1);
+  --inputformerror: rgba(255, 77, 79, 1);
+  --light-1: rgba(221, 224, 229, 1);
+  --light-3: rgba(235, 238, 243, 1);
+  --main: rgba(0, 128, 255, 1);
+  --modal-shadow: 0px 8px 8px -4px rgba(16, 24, 40, 0.04),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.1);
+  --neutral-1: rgba(255, 255, 255, 1);
+  --orange-1: rgba(212, 107, 8, 1);
+  --paginationbg: rgba(241, 243, 245, 1);
+  --primarylighter: rgba(111, 128, 160, 1);
+  --primarymain: rgba(42, 57, 88, 1);
+  --scrollbg: rgba(230, 232, 234, 1);
+  --shadeswhite: rgba(255, 255, 255, 1);
+  --shadow-xl: 0px 8px 8px -4px rgba(16, 24, 40, 0.04),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.1);
+  --status-textapproval: rgba(22, 101, 52, 1);
+  --status-textbg1: rgba(220, 252, 231, 1);
+  --status-textbg2: rgba(255, 237, 213, 1);
+  --status-textbg3: rgba(254, 226, 226, 1);
+  --status-textrefusal: rgba(153, 27, 27, 1);
+  --status-textwaiting: rgba(154, 52, 18, 1);
+  --success-50: rgba(236, 253, 243, 1);
+  --success-600: rgba(3, 152, 85, 1);
+  --tablebg: rgba(238, 240, 244, 1);
+  --tablebg-2: rgba(249, 249, 251, 1);
+  --warning-100: rgba(254, 240, 199, 1);
+  --warning-50: rgba(255, 250, 235, 1);
+  --white: rgba(255, 255, 255, 1);
+  --white-1: rgba(245, 245, 245, 1);
+  --blue-500: rgba(34, 100, 229, 1);
+  --blue-600: rgba(19, 84, 212, 1);
+  --check-box-shaodw: 0px 2px 5px 0px rgba(89, 96, 120, 0.1),
+    0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  --dark-1: rgba(34, 34, 34, 1);
+  --dark-3: rgba(90, 97, 106, 1);
+  --inputformcompleted: rgba(177, 180, 187, 1);
+  --inputformdefault: rgba(215, 216, 218, 1);
+  --inputformerror: rgba(255, 77, 79, 1);
+  --light-1: rgba(221, 224, 229, 1);
+  --light-3: rgba(235, 238, 243, 1);
+  --main: rgba(0, 128, 255, 1);
+  --p-l-b-font-family: "Roboto", Helvetica;
+  --p-l-b-font-size: 16px;
+  --p-l-b-font-style: normal;
+  --p-l-b-font-weight: 700;
+  --p-l-b-letter-spacing: 0px;
+  --p-l-b-line-height: 24px;
+  --paginationbg: rgba(241, 243, 245, 1);
+  --primarylighter: rgba(111, 128, 160, 1);
+  --primarymain: rgba(42, 57, 88, 1);
+  --scrollbg: rgba(230, 232, 234, 1);
+  --status-textapproval: rgba(22, 101, 52, 1);
+  --status-textbg1: rgba(220, 252, 231, 1);
+  --status-textbg2: rgba(255, 237, 213, 1);
+  --status-textbg3: rgba(254, 226, 226, 1);
+  --status-textbg4: rgba(216, 228, 255, 1);
+  --status-textbg5: rgba(234, 211, 255, 1);
+  --status-textcheck: rgba(29, 57, 196, 1);
+  --status-textrefusal: rgba(153, 27, 27, 1);
+  --status-textschedule: rgba(83, 29, 171, 1);
+  --status-textwaiting: rgba(154, 52, 18, 1);
+  --tablebg: rgba(238, 240, 244, 1);
+  --tablebg-2: rgba(249, 249, 251, 1);
+  --white: rgba(255, 255, 255, 1);
+}

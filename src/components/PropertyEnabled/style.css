@@ -1,0 +1,7 @@
+.property-enabled {
+  border: 1px solid;
+  border-color: var(--inputformdefault);
+  border-radius: 8px;
+  height: 24px;
+  width: 24px;
+}

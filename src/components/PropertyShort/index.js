@@ -1,0 +1,1 @@
+export { PropertyShort } from "./PropertyShort";

@@ -1,0 +1,181 @@
+.modal {
+  align-items: center;
+  background-color: var(--base-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-xl);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+}
+
+.modal .modal-header {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--base-white);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.modal .content {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--base-white);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.modal .class {
+  margin-left: -2px !important;
+  margin-top: -2px !important;
+}
+
+.modal .class-2 {
+  left: unset !important;
+  margin-left: -2px !important;
+  margin-top: -2px !important;
+  position: relative !important;
+  top: unset !important;
+}
+
+.modal .text-and-supporting {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.modal .text {
+  align-self: stretch;
+  font-family: "Pretendard-SemiBold", Helvetica;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 28px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.modal .button-close-x {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  left: 340px;
+  overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  top: 16px;
+}
+
+.modal .x-close {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.modal .modal-actions {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 32px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.modal .div {
+  align-self: stretch;
+  position: relative;
+  width: 100%;
+}
+
+.modal .component-2 {
+  left: 115px !important;
+}
+
+.modal .button-wrapper {
+  align-items: center;
+  border: 1.5px solid;
+  border-color: #293958;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  height: 44px;
+  justify-content: center;
+  padding: 17px 16px;
+  position: relative;
+  width: 170px;
+}
+
+.modal .text-wrapper {
+  all: unset;
+  box-sizing: border-box;
+  color: var(--primarymain);
+  flex: 1;
+  font-family: "Pretendard-SemiBold", Helvetica;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-bottom: -3px;
+  margin-top: -6px;
+  position: relative;
+  text-align: center;
+}
+
+.modal .variant-6 {
+  color: var(--gray-900);
+}
+
+.modal .variant-5 {
+  color: var(--gray-900);
+}
+
+.modal .default {
+  color: var(--dark-1);
+}
+
+.modal .variant-7 {
+  color: var(--gray-900);
+}
+
+.modal .property-1-variant-6 {
+  height: 68px;
+}
+
+.modal .property-1-variant-5 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  padding: 0px 24px 24px;
+}
+
+.modal .property-1-default {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 12px;
+  height: 68px;
+  justify-content: center;
+  padding: 0px 24px 24px;
+}
+
+.modal .property-1-variant-7 {
+  height: 68px;
+}

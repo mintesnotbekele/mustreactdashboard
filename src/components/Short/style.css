@@ -1,0 +1,26 @@
+.short {
+  all: unset;
+  align-items: center;
+  background-color: var(--primarymain);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 17px 16px;
+  position: relative;
+  width: 180px;
+}
+
+.short .button {
+  color: #ffffff;
+  flex: 1;
+  font-family: "Pretendard-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+}

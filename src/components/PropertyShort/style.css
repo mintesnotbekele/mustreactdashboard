@@ -1,0 +1,29 @@
+.property-short {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: var(--inputformcompleted);
+  border-radius: 10px;
+  display: inline-flex;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+}
+
+.property-short .select {
+  color: #0a0f19;
+  font-family: "Pretendard-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.02px;
+  line-height: normal;
+  margin-top: -1px;
+  position: relative;
+  width: 107px;
+}
+
+.property-short .vector {
+  height: 6.55px;
+  position: relative;
+  width: 11.15px;
+}

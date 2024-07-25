@@ -1,0 +1,61 @@
+.basic {
+  align-items: center;
+  border-radius: 10px;
+  display: inline-flex;
+  gap: 6px;
+  overflow: hidden;
+  padding: 2px 3px;
+  position: relative;
+}
+
+.basic .text {
+  font-family: "Pretendard-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.basic.approval {
+  background-color: var(--status-textbg1);
+}
+
+.basic.waiting {
+  background-color: var(--status-textbg2);
+}
+
+.basic.check {
+  background-color: var(--status-textbg4);
+}
+
+.basic.schedule {
+  background-color: var(--status-textbg5);
+}
+
+.basic.refusal {
+  background-color: var(--status-textbg3);
+}
+
+.basic.approval .text {
+  color: var(--status-textapproval);
+}
+
+.basic.waiting .text {
+  color: var(--status-textwaiting);
+}
+
+.basic.check .text {
+  color: var(--status-textcheck);
+}
+
+.basic.schedule .text {
+  color: var(--status-textschedule);
+}
+
+.basic.refusal .text {
+  color: var(--status-textrefusal);
+}

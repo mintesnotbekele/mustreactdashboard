@@ -1,0 +1,17 @@
+.scroll {
+  background-color: var(--scrollbg);
+  border-radius: 20px;
+  height: 309px;
+  overflow: hidden;
+  width: 7px;
+}
+
+.scroll .rectangle {
+  background-color: var(--primarylighter);
+  border-radius: 20px;
+  height: 107px;
+}
+
+.scroll.width {
+  transform: rotate(90deg);
+}
