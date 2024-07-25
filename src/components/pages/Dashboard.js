@@ -136,13 +136,12 @@ export const Dashboard = () => {
         </CustomSelectBox>
       </FormControl> */}
     </Box>
-    <Box sx={{ minWidth: 120 }}>
+    {/* <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel  style={{padding: '0px'}} id="demo-simple-select-label">승인여부 전체</InputLabel>
+        <InputLabel  id="demo-simple-select-label">승인여부 전체</InputLabel>
         <CustomSelectBox
-        
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+            fullWidth
+             style={{minWidth: '150px'}}
             value={status}
             className="property-short"
            
@@ -150,23 +149,51 @@ export const Dashboard = () => {
             onChange={(e)=> setStatus(e.target.value)}
             IconComponent={CustomCaretIcon}
           >
-              {statusActions.map(actions=>
+            <div  style={{borderRadius: "30px"}}  >
+              {statusActions.map((actions, index)=>
               {
                 return(
-                <CustomMenuItem   style={{padding: '0px'}}  value={actions}>
+                <CustomMenuItem  key={index}   value={actions}>
+                    {actions}
+                  </CustomMenuItem>
+              )}
+              
+            )}
+            </div>
+    </CustomSelectBox>
+    </FormControl>
+    </Box> */}
+    <Box sx={{ minWidth: 120 }}>
+      <FormControl fullWidth>
+        <InputLabel id="demo-simple-select-label">50개씩 보기</InputLabel>
+    <CustomSelectBox
+    style={{minWidth: '150px'}}
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={status}
+            className=" property-short"
+            onChange={(e)=> setStatus(e.target.value)}
+            label="Actions"
+       
+            IconComponent={CustomCaretIcon}
+          >
+              {statusActions.map((actions, index)=>
+              {
+                return(
+                <CustomMenuItem key={index}  value={actions}>
                     {actions}
                   </CustomMenuItem>
               )}
             )}
     </CustomSelectBox>
-    </FormControl>
-    </Box>
+    
+   </FormControl>
+   </Box>
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">신청일시순</InputLabel>
-    <CustomSelectBox
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+        <InputLabel >신청일시순</InputLabel>
+       <CustomSelectBox
+          style={{minWidth: '150px'}}
             value={select}
             className="property-short"
             label="Actions"
@@ -188,10 +215,11 @@ export const Dashboard = () => {
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">50개씩 보기</InputLabel>
     <CustomSelectBox
+    
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={page}
-            className="component property-short"
+            className=" property-short"
             onChange={(e)=> setPage(e.target.value)}
             label="Actions"
        

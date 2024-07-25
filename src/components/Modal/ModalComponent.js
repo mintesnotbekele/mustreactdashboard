@@ -37,7 +37,7 @@ export const ModalComponent=({ open, onClose, title, children })=>{
   return(
     <Modal open={open} onClose={onClose}>
   <Box sx={{ ...getModalStyle(), position: 'absolute', bgcolor: 'background.paper', boxShadow: 24, borderRadius: 2 }}>
-  <FigmaModal property1='default'/>
+  <FigmaModal property1='variant-5'/>
     {/*  <IconButton onClick={onClose} sx={{ position: 'absolute', top: 8, right: 8 }}>
         <CloseIcon />
       </IconButton>

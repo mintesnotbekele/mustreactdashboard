@@ -45,13 +45,11 @@ export const TableHeader=()=>{
       <FormControl fullWidth>
         <InputLabel id="demo-simple-select-label">승인상태 변경</InputLabel>
     <CustomSelectBox
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
+           
             value={page}
-            className="component property-short"
+            className=" property-short"
             onChange={(e)=> setPage(e.target.value)}
-            label="Actions"
-       
+            
             IconComponent={CustomCaretIcon}
           >
               {paginate.map((actions, index)=>

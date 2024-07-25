@@ -7,7 +7,6 @@
   flex-direction: column;
   overflow: hidden;
   position: relative;
-  width: 400px;
 }
 
 .modal .modal-header {
@@ -74,7 +73,7 @@
   border-radius: 8px;
   display: inline-flex;
   justify-content: center;
-  left: 340px;
+  left: 520px;
   overflow: hidden;
   padding: 10px;
   position: absolute;

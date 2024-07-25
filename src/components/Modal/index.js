@@ -3,16 +3,40 @@ import React from "react";
 import { Component } from "./Component";
 import { ModalIcon } from "./ModalIcon";
 import "./style.css";
-import xclose from './x-close.svg';
+import xclose from './x-close.png';
+import warning from './check-circle.svg';
+import success from './success.png';
+
 export const FigmaModal = ({ property1 }) => {
   return (
     <div className="modal">
       <div className="modal-header">
         <div className="content">
-          <ModalIcon
+         
+           {property1 === "default" && <> <ModalIcon
             property1={property1 === "variant-6" ? "completed" : "alert"}
             propertyAlertClassName={`${property1 === "variant-6" ? "class" : "class-2"}`}
-          />
+            url={warning}
+          /></>}
+
+          {property1 === "variant-5" && <><ModalIcon
+            property1={property1 === "variant-6" ? "completed" : "alert"}
+            propertyAlertClassName={`${property1 === "variant-6" ? "class" : "class-2"}`}
+            url={warning}
+          /></>}
+
+          {property1 === "variant-6" && <><ModalIcon
+            property1={property1 === "variant-6" ? "completed" : "alert"}
+            propertyAlertClassName={`${property1 === "variant-6" ? "class" : "class-2"}`}
+            url={success}
+          /></>}
+
+          {property1 === "variant-7" && <><ModalIcon
+            property1={property1 === "variant-6" ? "completed" : "alert"}
+            propertyAlertClassName={`${property1 === "variant-6" ? "class" : "class-2"}`}
+            url={warning}
+          /></>}
+
           <div className="text-and-supporting">
             <div className={`text ${property1}`}>
               {property1 === "default" && <>최대 10개까지 등록 가능합니다. 파일 등록에 실패하였습니다.</>}
